@@ -1,0 +1,9 @@
+package spring_demo_1;
+
+public class BeanScopeDemoApp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

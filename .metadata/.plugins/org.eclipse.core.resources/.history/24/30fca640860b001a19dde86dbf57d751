@@ -1,0 +1,10 @@
+package spring_demo_1;
+
+public class BaseballCouch implements Coach {
+	
+	@Override
+	String getDailyWorkout() {
+		return "Sample string";
+	}
+
+}

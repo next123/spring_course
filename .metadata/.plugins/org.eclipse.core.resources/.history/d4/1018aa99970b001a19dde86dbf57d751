@@ -1,0 +1,26 @@
+package spring_demo_1;
+
+public class SetterCoach implements Coach {
+
+	private InjectionService injectionService;
+	private String email;
+	private String myName;
+	public SetterCoach() {
+	}
+
+	public void setInjectionService(InjectionService injectionService) {
+		System.out.println("Inside setInjectionService");
+		this.injectionService = injectionService;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+		return "This is the setter getDailyWorkout";
+	}
+
+	@Override
+	public String getInjectionFromContext() {
+		return "This is the setter getInjectionFromContext" + injectionService.getText();
+	}
+
+}
